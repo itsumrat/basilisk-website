@@ -1,0 +1,87 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+* {
+	scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+	background-color: #2b504947;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #68c8b5;
+}
+
+
+html,
+body {
+	scroll-behavior: smooth;
+	font-family: 'Inter', sans-serif;
+}
+
+/* Change text & background color */
+
+
+a,
+a:hover,
+a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+button,
+button:hover,
+button:focus,
+button:active {
+	outline: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+// preloader
+
+#preloader {
+	height: 100vh;
+	width: 100%;
+	background: #000 url("../images/loader.gif");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 999;
+	position: fixed;
+	background-size: 25%;
+}
+
+
+// Fonts
+
+@font-face {
+	font-family: "Phenomena-Bold";
+	src: url("../fonts/Phenomena-Bold.otf");
+}
+
+@font-face {
+	font-family: "Phenomena-Regular";
+	src: url("../fonts/Phenomena-Regular.otf");
+}
+
+@font-face {
+	font-family: "Phenomena-Light";
+	src: url("../fonts/Phenomena-Light.otf");
+}

@@ -1,0 +1,169 @@
+#contact-content {
+    background-image: url(./../images/contact-page-banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 250px 0;
+
+    .content-border-box {
+        background-image: radial-gradient(circle at 100% 100%, transparent 0px, rgba(34, 197, 151, 0.59) 0px, rgba(34, 197, 151, 0.59) 2px, transparent 2px), linear-gradient(to right, rgba(34, 197, 151, 0.59), rgba(34, 197, 151, 0.59)), radial-gradient(circle at 0% 100%, transparent 0px, rgba(34, 197, 151, 0.59) 0px, rgba(34, 197, 151, 0.59) 2px, transparent 2px), linear-gradient(to bottom, rgba(34, 197, 151, 0.59), transparent), radial-gradient(circle at 0% 0%, transparent 0px, transparent 0px, transparent 2px, transparent 2px), linear-gradient(to left, transparent, transparent), radial-gradient(circle at 100% 0%, transparent 0px, transparent 0px, transparent 2px, transparent 2px), linear-gradient(to top, transparent, rgba(34, 197, 151, 0.59));
+        background-size: 2px 2px, calc(100% - 4px) 2px, 2px 2px, 2px calc(100% - 4px);
+        background-position: top left, top center, top right, center right, bottom right, bottom center, bottom left, center left;
+        background-repeat: no-repeat;
+
+        .contact-box {
+            background: linear-gradient(66.39deg, rgba(13, 19, 24, 0.01) 1.51%, rgba(25, 106, 86, 0.289586) 87.29%, rgba(34, 197, 151, 0.42) 102.09%);
+            padding: 25px;
+
+            .contact-box-title {
+                font-family: "Phenomena-Bold";
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.04em;
+                color: rgba(34, 197, 151, 0.59);
+                padding-bottom: 20px;
+            }
+
+            .left-side {
+                padding-right: 20px;
+            }
+
+            .right-side {
+                padding-left: 20px;
+            }
+
+            .form-control:focus {
+                border-color: transparent;
+                box-shadow: none;
+            }
+
+            label {
+                font-family: "Phenomena-Bold";
+                font-size: 15px;
+                line-height: 24px;
+                letter-spacing: 0.03em;
+                color: #FFFFFF;
+                padding-bottom: 10px;
+
+                span {
+                    color: #ffffffb8;
+                }
+            }
+
+            .gape {
+                margin-bottom: 20px;
+            }
+
+            input {
+                font-family: "Phenomena-Bold";
+                font-size: 15px;
+                line-height: 18px;
+                color: rgba(48, 161, 135, 0.614);
+                background: #0F151A;
+                border: none;
+                height: 45px;
+                border-radius: 17.5px;
+
+                &::placeholder {
+                    color: rgba(22, 70, 59, 0.613781);
+                    font-size: 15px;
+                }
+            }
+
+            textarea {
+                font-family: "Phenomena-Bold";
+                height: 255px;
+                font-size: 15px;
+                background: #0F151A;
+                color: rgba(48, 161, 135, 0.614);
+                background: #0F151A;
+                border-radius: 7px;
+                border: none;
+                margin-bottom: 30px;
+                resize: none;
+
+                &::placeholder {
+                    color: rgba(22, 70, 59, 0.613781);
+                    font-size: 15px;
+                }
+            }
+
+            .input-box {
+                background: rgba(15, 21, 26, 0.6);
+                border-radius: 7px;
+                height: 155px;
+                margin-bottom: 30px;
+                padding: 0px 30px;
+
+                input {
+                    font-family: "Phenomena-Bold";
+                    font-size: 15px;
+                    line-height: 18px;
+                    letter-spacing: 0.01em;
+                    color: rgba(48, 161, 135, 0.614);
+                    background: transparent;
+                    border-radius: 0;
+                    border: none;
+                    height: 30px;
+                    margin-bottom: 0px;
+
+                    &::placeholder {
+                        color: #3E3E3E;
+                        font-size: 15px;
+                    }
+                }
+
+                .last-box {
+                    position: relative;
+
+                    i {
+                        position: absolute;
+                        left: -2px;
+                        top: 30%;
+                        transform: translateX(-50%);
+                        color: #174639;
+                        font-size: 15px;
+                    }
+                }
+                .border-design {
+                    position: relative;
+
+                    &:after {
+                        background: url(../images/Line-12.png) no-repeat center center;
+                        background-size: 100% auto;
+                        height: 1px;
+                        left: 0;
+                        pointer-events: none;
+                        position: absolute;
+                        bottom: 0;
+                        content: '';
+                        width: 100%;
+                    }
+
+                    i {
+                        position: absolute;
+                        left: -2px;
+                        top: 30%;
+                        transform: translateX(-50%);
+                        color: #174639;
+                        font-size: 15px;
+                    }
+                }
+
+            }
+
+            .contact-btn {
+                border: 2px solid #6DD8BB;
+                border-radius: 20px;
+                font-family: "Phenomena-Bold";
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: -0.02em;
+                color: #22C597;
+                background-color: transparent;
+                padding: 10px 70px;
+            }
+
+        }
+    }
+}

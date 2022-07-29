@@ -1,0 +1,982 @@
+@media (min-width: 3841px) and (max-width: 5120px) {
+    #community .img-box img {
+        width: 28%;
+    }
+}
+
+@media (min-width: 3441px) and (max-width: 3840px) {
+    #community .img-box img {
+        width: 38%;
+    }
+}
+
+@media (min-width: 2561px) and (max-width: 3440px) {
+    #community .img-box img {
+        width: 42%;
+    }
+}
+
+
+@media (min-width: 1921px) and (max-width: 2560px) {
+    #community .img-box img {
+        width: 55%;
+    }
+}
+
+/*======== large device =========*/
+@media (min-width: 992px) and (max-width: 1366px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .navbar .nav-item {
+        padding: 0px 20px;
+    }
+
+    #banner-part .left-side img {
+        width: 60%;
+    }
+
+    #banner-part .right-side img {
+        width: 60%;
+    }
+
+    #why-us {
+        padding: 100px 0px;
+    }
+
+    #why-us .text-part h2 {
+        position: absolute;
+        top: -220px;
+        left: -75px;
+        right: -85px;
+        font-family: "Phenomena-Bold";
+        font-size: 180px;
+    }
+
+    #why-us .text-part ul li p {
+        font-size: 18px;
+    }
+
+    #why-us .text-part h3 {
+        padding-bottom: 20px;
+    }
+
+    #why-us .img-part img {
+        top: -140px;
+    }
+
+    #why-us .text-part ul li p::after {
+        left: 95px;
+    }
+
+    #income .text-part ul li p::after {
+        left: 95px;
+    }
+
+    #banner-part {
+        padding: 150px 0px 100px;
+    }
+
+    #banner-part .banner-text {
+        padding-bottom: 60px;
+    }
+
+    #income {
+        padding: 100px 0px;
+    }
+
+    #income .text-part h2 {
+        top: -220px;
+        left: 50px;
+        font-size: 200px;
+    }
+
+    #income .text-part ul li p {
+        font-size: 18px;
+    }
+
+    #income .img-part img {
+        width: 96%;
+        margin-left: 0px;
+        margin-top: 90px;
+    }
+
+    #community {
+        padding-top: 100px;
+        height: 700px;
+    }
+
+    #community .img-box img {
+        width: 95%;
+    }
+}
+
+
+/*======== medium device =========*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar {
+        padding-top: 0px;
+
+        .container {
+            .mobile-nav {
+                display: flex;
+                flex-wrap: inherit;
+                align-items: end;
+                justify-content: flex-end;
+            }
+
+            .mobile-view {
+                display: block;
+
+                img {
+                    margin-top: -10px;
+                    width: 80%;
+                }
+            }
+
+            .navbar-toggler {
+                padding: 8px 12px;
+                margin-top: -8px;
+
+
+                img {
+                    width: 130%;
+                }
+            }
+
+            .navbar-collapse {
+                background-color: #000;
+
+                .navbar-nav {
+                    padding: 30px 0;
+                    text-align: center;
+
+                    .nav-link {
+                        line-height: 36px !important;
+                    }
+
+                    .nav-item {
+                        padding: 0px;
+                    }
+
+                    .gape-one {
+                        padding-right: 0px;
+                    }
+
+                    .gape-two {
+                        padding-left: 0px;
+                    }
+                }
+
+                .pc-view {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    #banner-part {
+        padding: 130px 0px 80px;
+
+        .banner-text {
+            padding-bottom: 30px;
+
+            h2 {
+                font-weight: 300;
+                font-size: 42px;
+                color: #fff;
+            }
+
+            ul {
+                padding-left: 0px;
+
+                li p {
+                    font-size: 15px;
+                    padding: 0px 10px 0px 0px;
+                }
+            }
+
+        }
+
+        .left-side {
+            margin-bottom: 20px;
+
+            img {
+                display: none;
+            }
+        }
+
+        .right-side {
+            img {
+                display: none;
+            }
+        }
+    }
+
+    #why-us {
+        padding: 30px 0px 50px;
+
+        .mobile-img {
+            display: block;
+
+            img {
+                margin-top: 34px;
+                width: 120%;
+
+            }
+        }
+
+        .img-part {
+            display: none;
+        }
+
+        .text-part {
+            padding-top: 50px;
+
+            h2 {
+                top: -165px;
+                left: 0;
+                right: -85px;
+                font-size: 145px;
+                width: 100%;
+            }
+
+
+        }
+
+        h3 {
+            padding-bottom: 15px !important;
+        }
+
+        p {
+            font-size: 18px !important;
+            line-height: 30px !important;
+
+            &:after {
+                left: 0 !important;
+            }
+        }
+    }
+
+    #income {
+        padding: 0px 0px 50px;
+
+        .img-part img {
+            margin-top: 140px;
+        }
+
+        .mobile-view {
+            display: none;
+
+        }
+
+
+
+        .text-part {
+            padding-top: 90px;
+
+            h2 {
+                top: -119px;
+                left: 35px;
+                font-size: 120px;
+            }
+
+            h3 {
+                padding-bottom: 15px !important;
+            }
+
+            p {
+                font-size: 18px !important;
+                line-height: 30px !important;
+
+                &:after {
+                    left: 0 !important;
+                }
+            }
+        }
+    }
+
+    #community {
+        height: 420px;
+
+        img {
+            width: 100% !important;
+        }
+
+        .find-btn {
+            font-size: 12px;
+            padding: 7px 36px;
+            z-index: 9;
+        }
+
+        .content-box {
+            height: 249px;
+
+            h2 {
+                font-size: 36px;
+                top: -126px;
+
+                span {
+                    font-size: 90px;
+                    line-height: 75px !important;
+                }
+            }
+        }
+    }
+
+    #footer {
+        height: 210px;
+        padding: 30px;
+
+        img {
+            width: 70%;
+        }
+
+        ul {
+            margin-bottom: 0px;
+        }
+
+        li a {
+            font-size: 18px !important;
+            margin: 0px 22px 0px 0px !important;
+        }
+    }
+
+    #footer .content-box::after {
+        background: url(../images/footer-line.png) no-repeat center center;
+        background-size: 100% auto;
+        height: 2px;
+        left: 10%;
+        pointer-events: none;
+        position: absolute;
+        top: 71%;
+        content: '';
+        width: 75%;
+    }
+
+
+
+    #contact-content {
+        padding: 120px 0 30px;
+    }
+
+    #contact-content .content-border-box .contact-box .right-side {
+        padding-left: 0;
+    }
+
+    #contact-content .content-border-box .contact-box textarea {
+        height: 220px;
+    }
+
+    .end-btn {
+        text-align: center !important;
+    }
+
+    #banner-part::after {
+        display: none;
+    }
+
+    #banner-part::before {
+        display: none;
+    }
+
+    .navbar .container::after {
+        display: none;
+    }
+
+    #why-us::before {
+        display: none;
+    }
+
+    #why-us::after {
+        display: none;
+    }
+
+    #income::after {
+        display: none;
+    }
+}
+
+
+
+
+/*======== small device =========*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar {
+        padding-top: 0px;
+
+        .container {
+
+
+            .mobile-nav {
+                display: flex;
+                flex-wrap: inherit;
+                align-items: end;
+                justify-content: flex-end;
+            }
+
+            .mobile-view {
+                display: block;
+
+                img {
+                    margin-top: -10px;
+                    width: 80%;
+                }
+            }
+
+            .navbar-toggler {
+                padding: 8px 12px;
+                margin-top: -8px;
+
+
+                img {
+                    width: 130%;
+                }
+            }
+
+            .navbar-collapse {
+                background-color: #000;
+
+                .navbar-nav {
+                    padding: 30px 0;
+                    text-align: center;
+
+                    .nav-link {
+                        line-height: 36px !important;
+                    }
+
+                    .nav-item {
+                        padding: 0px;
+                    }
+
+                    .gape-one {
+                        padding-right: 0px;
+                    }
+
+                    .gape-two {
+                        padding-left: 0px;
+                    }
+                }
+
+                .pc-view {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    #banner-part {
+        padding: 130px 0px 80px;
+
+        .banner-text {
+            padding-bottom: 30px;
+
+            h2 {
+                font-weight: 300;
+                font-size: 26px;
+                color: #fff;
+            }
+
+            ul {
+                padding-left: 0px;
+
+                li p {
+                    font-size: 15px;
+                    padding: 0px 10px 0px 0px;
+                }
+            }
+
+        }
+
+        .left-side {
+            margin-bottom: 20px;
+
+            img {
+                display: none;
+            }
+        }
+
+        .right-side {
+            img {
+                display: none;
+            }
+        }
+    }
+
+    #why-us {
+        padding: 30px 0px 50px;
+
+        .mobile-img {
+            display: block;
+
+            img {
+                margin-top: -70px;
+                width: 100%;
+            }
+        }
+
+        .img-part {
+            display: none;
+        }
+
+        .text-part {
+            padding-top: 50px;
+
+            h2 {
+                top: -165px;
+                left: 0;
+                right: -85px;
+                font-size: 145px;
+                width: 100%;
+            }
+
+
+        }
+
+        h3 {
+            padding-bottom: 15px !important;
+        }
+
+        p {
+            font-size: 18px !important;
+            line-height: 30px !important;
+
+            &:after {
+                left: 70px !important;
+            }
+        }
+    }
+
+    #income {
+        padding: 60px 0px 100px;
+
+        .img-part img {
+            width: 100%;
+            margin-left: 0px;
+        }
+
+        .mobile-view {
+            display: block;
+
+        }
+
+        .desktop-view {
+            display: none;
+        }
+
+        .text-part {
+            padding-top: 90px;
+
+            h2 {
+                top: -124px;
+                left: 80px;
+                font-size: 150px;
+            }
+
+            h3 {
+                padding-bottom: 15px !important;
+            }
+
+            p {
+                font-size: 18px !important;
+                line-height: 30px !important;
+
+                &:after {
+                    left: 70px !important;
+                }
+            }
+        }
+    }
+
+    #community {
+        height: 420px;
+
+        img {
+            width: 100% !important;
+        }
+
+        .find-btn {
+            font-size: 12px;
+            padding: 7px 36px;
+            z-index: 9;
+        }
+
+        .content-box {
+            height: 249px;
+
+            h2 {
+                font-size: 36px;
+                top: -126px;
+
+                span {
+                    font-size: 90px;
+                    line-height: 75px !important;
+                }
+            }
+        }
+    }
+
+    #footer {
+        height: 210px;
+        padding: 30px;
+
+        img {
+            width: 70%;
+        }
+
+        ul {
+            margin-bottom: 0px;
+        }
+
+        li a {
+            font-size: 18px !important;
+            margin: 0px 22px 0px 0px !important;
+        }
+    }
+
+    #footer .content-box::after {
+        background: url(../images/footer-line.png) no-repeat center center;
+        background-size: 100% auto;
+        height: 2px;
+        left: 10%;
+        pointer-events: none;
+        position: absolute;
+        top: 71%;
+        content: '';
+        width: 75%;
+    }
+
+
+
+    #contact-content {
+        padding: 120px 0 30px;
+    }
+
+    #contact-content .content-border-box .contact-box .right-side {
+        padding-left: 0;
+    }
+
+    #contact-content .content-border-box .contact-box textarea {
+        height: 220px;
+    }
+
+    .end-btn {
+        text-align: center !important;
+    }
+
+    #banner-part::after {
+        display: none;
+    }
+
+    #banner-part::before {
+        display: none;
+    }
+
+    .navbar .container::after {
+        display: none;
+    }
+
+    #why-us::before {
+        display: none;
+    }
+
+    #why-us::after {
+        display: none;
+    }
+
+    #income::after {
+        display: none;
+    }
+}
+
+
+/*======== Extra small device =========*/
+@media (max-width: 575.98px) {
+    .navbar {
+        padding-top: 0px;
+
+        .container {
+
+
+            .mobile-nav {
+                display: flex;
+                flex-wrap: inherit;
+                align-items: end;
+                justify-content: flex-end;
+            }
+
+            .mobile-view {
+                display: block;
+
+                img {
+                    margin-top: -10px;
+                    width: 80%;
+                }
+            }
+
+            .navbar-toggler {
+                padding: 8px 12px;
+                margin-top: -8px;
+
+
+                img {
+                    width: 130%;
+                }
+            }
+
+            .navbar-collapse {
+                background-color: #000;
+
+                .navbar-nav {
+                    padding: 20px 0px;
+                    text-align: center;
+
+                    .nav-item {
+                        padding: 0px;
+                    }
+
+                    .nav-link {
+                        line-height: 36px !important;
+                    }
+
+                    .gape-one {
+                        padding-right: 0px;
+                    }
+
+                    .gape-two {
+                        padding-left: 0px;
+                    }
+                }
+
+                .pc-view {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    #banner-part {
+        padding: 130px 0px 80px;
+
+        .banner-text {
+            padding-bottom: 30px;
+
+            h2 {
+                font-weight: 300;
+                font-size: 26px;
+                color: #fff;
+            }
+
+            ul {
+                padding-left: 0px;
+
+                li p {
+                    font-size: 15px;
+                    padding: 0px 10px 0px 0px;
+                }
+            }
+
+        }
+
+        .left-side {
+            margin-bottom: 20px;
+
+            img {
+                display: none;
+            }
+        }
+
+        .right-side {
+            img {
+                display: none;
+            }
+        }
+    }
+
+    #why-us {
+        padding: 30px 0px 50px;
+
+        .mobile-img {
+            display: block;
+
+            img {
+                margin-top: -70px;
+                width: 100%;
+            }
+        }
+
+        .img-part {
+            display: none;
+        }
+
+        .text-part {
+            padding-top: 50px;
+
+            h2 {
+                top: -165px;
+                left: 0;
+                right: -85px;
+                font-size: 145px;
+                width: 100%;
+            }
+
+
+        }
+
+        h3 {
+            padding-bottom: 15px !important;
+        }
+
+        p {
+            font-size: 18px !important;
+            line-height: 30px !important;
+
+            &:after {
+                left: 10px !important;
+            }
+        }
+    }
+
+    #income {
+        padding: 60px 0px 100px;
+
+        .img-part img {
+            width: 100%;
+            margin-left: 0px;
+        }
+
+        .mobile-view {
+            display: block;
+
+        }
+
+        .desktop-view {
+            display: none;
+        }
+
+        .text-part {
+            padding-top: 90px;
+
+            h2 {
+                top: -124px;
+                left: 10px;
+                font-size: 150px;
+            }
+
+            h3 {
+                padding-bottom: 15px !important;
+            }
+
+            p {
+                font-size: 18px !important;
+                line-height: 30px !important;
+
+                &:after {
+                    left: 10px !important;
+                }
+            }
+        }
+    }
+
+    #community {
+        height: 249px;
+
+        img {
+            width: 100% !important;
+        }
+
+        .find-btn {
+            font-size: 12px;
+            padding: 7px 36px;
+            z-index: 9;
+        }
+
+        .content-box {
+            height: 249px;
+
+            h2 {
+                font-size: 36px;
+                top: -126px;
+
+                span {
+                    font-size: 90px;
+                    line-height: 75px !important;
+                }
+            }
+        }
+    }
+
+    #footer {
+        height: 210px;
+        padding: 30px;
+
+        img {
+            width: 70%;
+        }
+
+        ul {
+            margin-bottom: 0px;
+        }
+
+        li a {
+            font-size: 18px !important;
+            margin: 0px 22px 0px 0px !important;
+        }
+    }
+
+    #footer .content-box::after {
+        background: url(../images/footer-line.png) no-repeat center center;
+        background-size: 100% auto;
+        height: 2px;
+        left: 10%;
+        pointer-events: none;
+        position: absolute;
+        top: 71%;
+        content: '';
+        width: 75%;
+    }
+
+
+
+    #contact-content {
+        padding: 120px 0 30px;
+    }
+
+    #contact-content .content-border-box .contact-box .right-side {
+        padding-left: 0;
+    }
+
+    #contact-content .content-border-box .contact-box textarea {
+        height: 220px;
+    }
+
+    .end-btn {
+        text-align: center !important;
+    }
+
+    #banner-part::after {
+        display: none;
+    }
+
+    #banner-part::before {
+        display: none;
+    }
+
+    .navbar .container::after {
+        display: none;
+    }
+
+    #why-us::before {
+        display: none;
+    }
+
+    #why-us::after {
+        display: none;
+    }
+
+    #income::after {
+        display: none;
+    }
+}
