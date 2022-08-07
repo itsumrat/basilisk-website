@@ -5,6 +5,32 @@
     background-repeat: no-repeat;
     padding: 250px 0;
 
+    &:after {
+        background: url(../images/contact-line2.png) no-repeat center center;
+        background-size: cover;
+        height: 1160px;
+        left: 3%;
+        pointer-events: none;
+        position: absolute;
+        top: 8%;
+        content: '';
+        z-index: 0;
+        width: 35px;
+    }
+
+    &:before {
+        background: url(../images/line-1.png) no-repeat center center;
+        background-size: cover;
+        height: 1000px;
+        right: 0;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        content: '';
+        z-index: 0;
+        width: 100px;
+    }
+
     .content-border-box {
         background-image: radial-gradient(circle at 100% 100%, transparent 0px, rgba(34, 197, 151, 0.59) 0px, rgba(34, 197, 151, 0.59) 2px, transparent 2px), linear-gradient(to right, rgba(34, 197, 151, 0.59), rgba(34, 197, 151, 0.59)), radial-gradient(circle at 0% 100%, transparent 0px, rgba(34, 197, 151, 0.59) 0px, rgba(34, 197, 151, 0.59) 2px, transparent 2px), linear-gradient(to bottom, rgba(34, 197, 151, 0.59), transparent), radial-gradient(circle at 0% 0%, transparent 0px, transparent 0px, transparent 2px, transparent 2px), linear-gradient(to left, transparent, transparent), radial-gradient(circle at 100% 0%, transparent 0px, transparent 0px, transparent 2px, transparent 2px), linear-gradient(to top, transparent, rgba(34, 197, 151, 0.59));
         background-size: 2px 2px, calc(100% - 4px) 2px, 2px 2px, 2px calc(100% - 4px);
@@ -125,6 +151,7 @@
                         font-size: 15px;
                     }
                 }
+
                 .border-design {
                     position: relative;
 

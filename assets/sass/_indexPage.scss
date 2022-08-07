@@ -9,29 +9,27 @@
     &:after {
         background: url(../images/line-1.png) no-repeat center center;
         background-size: cover;
-        height: 136%;
+        height: 1000px;
         left: 0;
         pointer-events: none;
         position: absolute;
-        top: -220px;
+        top: 0;
         content: '';
         z-index: 0;
-        opacity: 0.6;
         width: 100px;
     }
 
     &:before {
         background: url(../images/line-2.png) no-repeat center center;
         background-size: cover;
-        height: 100%;
+        height: 1000px;
         right: 3%;
         pointer-events: none;
         position: absolute;
-        top: 3px;
+        top: 13%;
         content: '';
         z-index: 0;
         width: 32px;
-        opacity: 0.6;
     }
 
 
@@ -42,11 +40,53 @@
             font-weight: 300;
             font-size: 58px;
             color: #fff;
+            transform: scale(0.94);
+            animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 
-            span {
+            .color-span {
                 color: #6DD8BB;
             }
+
+            span {
+                display: inline-block;
+                opacity: 0;
+                filter: blur(4px);
+
+                &:nth-child(1) {
+                    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+                }
+
+                &:nth-child(2) {
+                    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+                }
+
+                &:nth-child(3) {
+                    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+                }
+
+                &:nth-child(4) {
+                    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+                }
+
+                &:nth-child(5) {
+                    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+                }
+            }
         }
+
+        @keyframes scale {
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fade-in {
+            100% {
+                opacity: 1;
+                filter: blur(0);
+            }
+        }
+
 
         ul {
             li {
@@ -57,9 +97,37 @@
                     font-size: 19px;
                     color: #fff;
                     padding: 0px 35px 0px 0px;
+                    transform: scale(0.94);
+                    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+
+                    .color-span {
+                        color: #6DD8BB;
+                    }
 
                     span {
-                        color: #6DD8BB;
+                        display: inline-block;
+                        opacity: 0;
+                        filter: blur(4px);
+
+                        &:nth-child(1) {
+                            animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+                        }
+
+                        &:nth-child(2) {
+                            animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+                        }
+
+                        &:nth-child(3) {
+                            animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+                        }
+
+                        &:nth-child(4) {
+                            animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+                        }
+
+                        &:nth-child(5) {
+                            animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+                        }
                     }
                 }
             }
@@ -227,15 +295,14 @@
         &:after {
             background: url(../images/line-3.png) no-repeat center center;
             background-size: 100% auto;
-            height: 27px;
-            left: 39%;
+            height: 29px;
+            left: 44%;
             pointer-events: none;
             position: absolute;
-            bottom: -7px;
+            bottom: -6px;
             content: '';
-            width: 32%;
+            width: 62%;
             transform: translate(-50%, 0);
-            opacity: 0.8;
         }
     }
 
@@ -288,30 +355,28 @@
     &:after {
         background: url(../images/line-3.png) no-repeat center center;
         background-size: 100% auto;
-        height: 27px;
+        height: 32px;
         left: 50%;
         pointer-events: none;
         position: absolute;
-        bottom: -15px;
+        bottom: -16px;
         content: '';
-        width: 32%;
+        width: 35%;
         transform: translate(-50%, 0);
-        opacity: 0.8;
         z-index: 9;
     }
 
     &:before {
         background: url(../images/line-2.png) no-repeat center center;
         background-size: cover;
-        height: 100%;
+        height: 1000px;
         right: 3%;
         pointer-events: none;
         position: absolute;
-        top: 50%;
+        top: 19%;
         content: '';
         z-index: 9;
         width: 32px;
-        opacity: 0.6;
     }
 
     #home {
@@ -402,22 +467,139 @@
             }
         }
 
-        .down-arrow {
-            border-top: 1px solid rgba(34, 197, 151, 0.3);
-            border-bottom: 1px solid rgba(34, 197, 151, 0.3);
-            padding: 10px 50px;
+        // .down-arrow {
+        //     border-top: 1px solid rgba(34, 197, 151, 0.3);
+        //     border-bottom: 1px solid rgba(34, 197, 151, 0.3);
+        //     padding: 10px 50px;
 
-            img {
-                transform: scale(1);
-                transition: all linear .2s;
+        //     img {
+        //         transform: scale(1);
+        //         transition: all linear .2s;
 
-                &:hover {
-                    transform: scale(1.3);
+        //         &:hover {
+        //             transform: scale(1.3);
+        //         }
+        //     }
+
+        //     &:hover img {
+        //         transform: scale(1.3);
+        //     }
+        // }
+
+        .content__item {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            counter-increment: itemcounter;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            span {
+                img {
+                    transform: scale(1);
+                    transition: all linear .2s;
+
+                    &:hover {
+                        transform: scale(1.3);
+                    }
                 }
             }
 
             &:hover img {
                 transform: scale(1.3);
+            }
+
+            a {
+                text-decoration: none;
+                color: #000;
+                outline: none;
+            }
+
+            a:hover {
+                color: #000;
+                outline: none;
+            }
+
+            /* https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */
+            a:focus {
+                /* Provide a fallback style for browsers
+	 that don't support :focus-visible */
+                outline: none;
+                background: lightgrey;
+            }
+
+            a:focus:not(:focus-visible) {
+                /* Remove the focus indicator on mouse-focus for browsers
+	 that do support :focus-visible */
+                background: transparent;
+            }
+
+            a:focus-visible {
+                /* Draw a very noticeable focus style for
+	 keyboard-focus on browsers that do support
+	 :focus-visible */
+                outline: 2px solid red;
+                background: transparent;
+            }
+
+
+            .link {
+                cursor: pointer;
+                font-size: 18px;
+                position: relative;
+                white-space: nowrap;
+                color: var(--color-text);
+            }
+
+            .link--iocaste {
+                overflow: hidden;
+                padding: 23px 52px;
+            }
+
+            .link__graphic {
+                position: absolute;
+                top: 0;
+                left: 0;
+                pointer-events: none;
+                fill: none;
+                stroke: rgba(34, 197, 151, 0.3);
+                stroke-width: 1px;
+            }
+
+            .link__graphic--slide {
+                top: -7px;
+                stroke-width: 2px;
+                transition: transform 0.7s;
+                transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+            }
+
+            .link__graphics {
+                position: absolute;
+                top: 0;
+                left: 0;
+                pointer-events: none;
+                fill: none;
+                stroke: rgba(34, 197, 151, 0.3);
+                stroke-width: 1px;
+            }
+
+            .link__graphics--slide {
+                top: -56px;
+                stroke-width: 2px;
+                transition: transform 0.7s;
+                transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+            }
+
+            .link:hover .link__graphic--slide {
+                transform: translate3d(-66.6%, 0, 0);
+            }
+
+            .link:hover .link__graphics--slide {
+                transform: translate3d(-66.6%, 0, 0);
             }
         }
     }
@@ -431,19 +613,17 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    overflow: hidden;
 
     &:after {
-        background: url(../images/line-1.png) no-repeat center center;
+        background: url(../images/line-4.png) no-repeat center center;
         background-size: cover;
-        height: 136%;
+        height: 1156px;
         left: 0;
         pointer-events: none;
         position: absolute;
-        top: -220px;
+        top: -83px;
         content: '';
-        z-index: 0;
-        opacity: 0.6;
+        z-index: 9;
         width: 100px;
     }
 
@@ -527,22 +707,120 @@
             }
         }
 
-        .down-arrow {
-            border-top: 1px solid rgba(34, 197, 151, 0.3);
-            border-bottom: 1px solid rgba(34, 197, 151, 0.3);
-            padding: 10px 50px;
+        .content__item {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            counter-increment: itemcounter;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
 
-            img {
-                transform: scale(1);
-                transition: all linear .2s;
+            span {
+                img {
+                    transform: scale(1);
+                    transition: all linear .2s;
 
-                &:hover {
-                    transform: scale(1.3);
+                    &:hover {
+                        transform: scale(1.3);
+                    }
                 }
             }
 
             &:hover img {
                 transform: scale(1.3);
+            }
+
+            a {
+                text-decoration: none;
+                color: #000;
+                outline: none;
+            }
+
+            a:hover {
+                color: #000;
+                outline: none;
+            }
+
+            /* https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */
+            a:focus {
+                /* Provide a fallback style for browsers
+	 that don't support :focus-visible */
+                outline: none;
+                background: lightgrey;
+            }
+
+            a:focus:not(:focus-visible) {
+                /* Remove the focus indicator on mouse-focus for browsers
+	 that do support :focus-visible */
+                background: transparent;
+            }
+
+            a:focus-visible {
+                /* Draw a very noticeable focus style for
+	 keyboard-focus on browsers that do support
+	 :focus-visible */
+                outline: 2px solid red;
+                background: transparent;
+            }
+
+
+            .link {
+                cursor: pointer;
+                font-size: 18px;
+                position: relative;
+                white-space: nowrap;
+                color: var(--color-text);
+            }
+
+            .link--iocaste {
+                overflow: hidden;
+                padding: 23px 52px;
+            }
+
+            .link__graphic {
+                position: absolute;
+                top: 0;
+                left: 0;
+                pointer-events: none;
+                fill: none;
+                stroke: rgba(34, 197, 151, 0.3);
+                stroke-width: 1px;
+            }
+
+            .link__graphic--slide {
+                top: -7px;
+                stroke-width: 2px;
+                transition: transform 0.7s;
+                transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+            }
+
+            .link__graphics {
+                position: absolute;
+                top: 0;
+                left: 0;
+                pointer-events: none;
+                fill: none;
+                stroke: rgba(34, 197, 151, 0.3);
+                stroke-width: 1px;
+            }
+
+            .link__graphics--slide {
+                top: -56px;
+                stroke-width: 2px;
+                transition: transform 0.7s;
+                transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+            }
+
+            .link:hover .link__graphic--slide {
+                transform: translate3d(-66.6%, 0, 0);
+            }
+
+            .link:hover .link__graphics--slide {
+                transform: translate3d(-66.6%, 0, 0);
             }
         }
     }

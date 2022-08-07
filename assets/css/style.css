@@ -71,44 +71,81 @@ ol {
   #banner-part:after {
     background: url(../images/line-1.png) no-repeat center center;
     background-size: cover;
-    height: 136%;
+    height: 1000px;
     left: 0;
     pointer-events: none;
     position: absolute;
-    top: -220px;
+    top: 0;
     content: '';
     z-index: 0;
-    opacity: 0.6;
     width: 100px; }
   #banner-part:before {
     background: url(../images/line-2.png) no-repeat center center;
     background-size: cover;
-    height: 100%;
+    height: 1000px;
     right: 3%;
     pointer-events: none;
     position: absolute;
-    top: 3px;
+    top: 13%;
     content: '';
     z-index: 0;
-    width: 32px;
-    opacity: 0.6; }
+    width: 32px; }
   #banner-part .banner-text {
     padding-bottom: 130px; }
     #banner-part .banner-text h2 {
       font-weight: 300;
       font-size: 58px;
-      color: #fff; }
-      #banner-part .banner-text h2 span {
+      color: #fff;
+      transform: scale(0.94);
+      animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1); }
+      #banner-part .banner-text h2 .color-span {
         color: #6DD8BB; }
+      #banner-part .banner-text h2 span {
+        display: inline-block;
+        opacity: 0;
+        filter: blur(4px); }
+        #banner-part .banner-text h2 span:nth-child(1) {
+          animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+        #banner-part .banner-text h2 span:nth-child(2) {
+          animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+        #banner-part .banner-text h2 span:nth-child(3) {
+          animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+        #banner-part .banner-text h2 span:nth-child(4) {
+          animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+        #banner-part .banner-text h2 span:nth-child(5) {
+          animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+@keyframes scale {
+  100% {
+    transform: scale(1); } }
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0); } }
     #banner-part .banner-text ul li {
       display: inline-block; }
       #banner-part .banner-text ul li p {
         font-weight: 300;
         font-size: 19px;
         color: #fff;
-        padding: 0px 35px 0px 0px; }
-        #banner-part .banner-text ul li p span {
+        padding: 0px 35px 0px 0px;
+        transform: scale(0.94);
+        animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1); }
+        #banner-part .banner-text ul li p .color-span {
           color: #6DD8BB; }
+        #banner-part .banner-text ul li p span {
+          display: inline-block;
+          opacity: 0;
+          filter: blur(4px); }
+          #banner-part .banner-text ul li p span:nth-child(1) {
+            animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+          #banner-part .banner-text ul li p span:nth-child(2) {
+            animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+          #banner-part .banner-text ul li p span:nth-child(3) {
+            animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+          #banner-part .banner-text ul li p span:nth-child(4) {
+            animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0); }
+          #banner-part .banner-text ul li p span:nth-child(5) {
+            animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0); }
   #banner-part .left-side {
     background: linear-gradient(257.78deg, rgba(0, 0, 0, 0) 0%, rgba(13, 141, 110, 0.613781) 60.96%, #15E5B3 99.32%);
     border: 1px solid rgba(135, 135, 135, 0.54);
@@ -233,15 +270,14 @@ ol {
     .navbar .container:after {
       background: url(../images/line-3.png) no-repeat center center;
       background-size: 100% auto;
-      height: 27px;
-      left: 39%;
+      height: 29px;
+      left: 44%;
       pointer-events: none;
       position: absolute;
-      bottom: -7px;
+      bottom: -6px;
       content: '';
-      width: 32%;
-      transform: translate(-50%, 0);
-      opacity: 0.8; }
+      width: 62%;
+      transform: translate(-50%, 0); }
   .navbar .mobile-view {
     display: none; }
   .navbar .nav-item {
@@ -273,28 +309,26 @@ ol {
   #why-us:after {
     background: url(../images/line-3.png) no-repeat center center;
     background-size: 100% auto;
-    height: 27px;
+    height: 32px;
     left: 50%;
     pointer-events: none;
     position: absolute;
-    bottom: -15px;
+    bottom: -16px;
     content: '';
-    width: 32%;
+    width: 35%;
     transform: translate(-50%, 0);
-    opacity: 0.8;
     z-index: 9; }
   #why-us:before {
     background: url(../images/line-2.png) no-repeat center center;
     background-size: cover;
-    height: 100%;
+    height: 1000px;
     right: 3%;
     pointer-events: none;
     position: absolute;
-    top: 50%;
+    top: 19%;
     content: '';
     z-index: 9;
-    width: 32px;
-    opacity: 0.6; }
+    width: 32px; }
   #why-us #home {
     position: absolute;
     left: -60%;
@@ -354,17 +388,86 @@ ol {
           left: 50px;
           top: 50%;
           transform: translate(0%, -50%); }
-    #why-us .text-part .down-arrow {
-      border-top: 1px solid rgba(34, 197, 151, 0.3);
-      border-bottom: 1px solid rgba(34, 197, 151, 0.3);
-      padding: 10px 50px; }
-      #why-us .text-part .down-arrow img {
+    #why-us .text-part .content__item {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      counter-increment: itemcounter;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      /* https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */ }
+      #why-us .text-part .content__item span img {
         transform: scale(1);
         transition: all linear .2s; }
-        #why-us .text-part .down-arrow img:hover {
+        #why-us .text-part .content__item span img:hover {
           transform: scale(1.3); }
-      #why-us .text-part .down-arrow:hover img {
+      #why-us .text-part .content__item:hover img {
         transform: scale(1.3); }
+      #why-us .text-part .content__item a {
+        text-decoration: none;
+        color: #000;
+        outline: none; }
+      #why-us .text-part .content__item a:hover {
+        color: #000;
+        outline: none; }
+      #why-us .text-part .content__item a:focus {
+                /* Provide a fallback style for browsers
+	 that don't support :focus-visible */
+        outline: none;
+        background: lightgrey; }
+      #why-us .text-part .content__item a:focus:not(:focus-visible) {
+                /* Remove the focus indicator on mouse-focus for browsers
+	 that do support :focus-visible */
+        background: transparent; }
+      #why-us .text-part .content__item a:focus-visible {
+                /* Draw a very noticeable focus style for
+	 keyboard-focus on browsers that do support
+	 :focus-visible */
+        outline: 2px solid red;
+        background: transparent; }
+      #why-us .text-part .content__item .link {
+        cursor: pointer;
+        font-size: 18px;
+        position: relative;
+        white-space: nowrap;
+        color: var(--color-text); }
+      #why-us .text-part .content__item .link--iocaste {
+        overflow: hidden;
+        padding: 23px 52px; }
+      #why-us .text-part .content__item .link__graphic {
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        fill: none;
+        stroke: rgba(34, 197, 151, 0.3);
+        stroke-width: 1px; }
+      #why-us .text-part .content__item .link__graphic--slide {
+        top: -7px;
+        stroke-width: 2px;
+        transition: transform 0.7s;
+        transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1); }
+      #why-us .text-part .content__item .link__graphics {
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        fill: none;
+        stroke: rgba(34, 197, 151, 0.3);
+        stroke-width: 1px; }
+      #why-us .text-part .content__item .link__graphics--slide {
+        top: -56px;
+        stroke-width: 2px;
+        transition: transform 0.7s;
+        transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1); }
+      #why-us .text-part .content__item .link:hover .link__graphic--slide {
+        transform: translate3d(-66.6%, 0, 0); }
+      #why-us .text-part .content__item .link:hover .link__graphics--slide {
+        transform: translate3d(-66.6%, 0, 0); }
 
 #income {
   padding: 130px 0px;
@@ -372,19 +475,17 @@ ol {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
-  overflow: hidden; }
+  position: relative; }
   #income:after {
-    background: url(../images/line-1.png) no-repeat center center;
+    background: url(../images/line-4.png) no-repeat center center;
     background-size: cover;
-    height: 136%;
+    height: 1156px;
     left: 0;
     pointer-events: none;
     position: absolute;
-    top: -220px;
+    top: -83px;
     content: '';
-    z-index: 0;
-    opacity: 0.6;
+    z-index: 9;
     width: 100px; }
   #income #home-two {
     position: absolute;
@@ -439,17 +540,86 @@ ol {
           left: 50px;
           top: 50%;
           transform: translate(0%, -50%); }
-    #income .text-part .down-arrow {
-      border-top: 1px solid rgba(34, 197, 151, 0.3);
-      border-bottom: 1px solid rgba(34, 197, 151, 0.3);
-      padding: 10px 50px; }
-      #income .text-part .down-arrow img {
+    #income .text-part .content__item {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      counter-increment: itemcounter;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      /* https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */ }
+      #income .text-part .content__item span img {
         transform: scale(1);
         transition: all linear .2s; }
-        #income .text-part .down-arrow img:hover {
+        #income .text-part .content__item span img:hover {
           transform: scale(1.3); }
-      #income .text-part .down-arrow:hover img {
+      #income .text-part .content__item:hover img {
         transform: scale(1.3); }
+      #income .text-part .content__item a {
+        text-decoration: none;
+        color: #000;
+        outline: none; }
+      #income .text-part .content__item a:hover {
+        color: #000;
+        outline: none; }
+      #income .text-part .content__item a:focus {
+                /* Provide a fallback style for browsers
+	 that don't support :focus-visible */
+        outline: none;
+        background: lightgrey; }
+      #income .text-part .content__item a:focus:not(:focus-visible) {
+                /* Remove the focus indicator on mouse-focus for browsers
+	 that do support :focus-visible */
+        background: transparent; }
+      #income .text-part .content__item a:focus-visible {
+                /* Draw a very noticeable focus style for
+	 keyboard-focus on browsers that do support
+	 :focus-visible */
+        outline: 2px solid red;
+        background: transparent; }
+      #income .text-part .content__item .link {
+        cursor: pointer;
+        font-size: 18px;
+        position: relative;
+        white-space: nowrap;
+        color: var(--color-text); }
+      #income .text-part .content__item .link--iocaste {
+        overflow: hidden;
+        padding: 23px 52px; }
+      #income .text-part .content__item .link__graphic {
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        fill: none;
+        stroke: rgba(34, 197, 151, 0.3);
+        stroke-width: 1px; }
+      #income .text-part .content__item .link__graphic--slide {
+        top: -7px;
+        stroke-width: 2px;
+        transition: transform 0.7s;
+        transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1); }
+      #income .text-part .content__item .link__graphics {
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        fill: none;
+        stroke: rgba(34, 197, 151, 0.3);
+        stroke-width: 1px; }
+      #income .text-part .content__item .link__graphics--slide {
+        top: -56px;
+        stroke-width: 2px;
+        transition: transform 0.7s;
+        transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1); }
+      #income .text-part .content__item .link:hover .link__graphic--slide {
+        transform: translate3d(-66.6%, 0, 0); }
+      #income .text-part .content__item .link:hover .link__graphics--slide {
+        transform: translate3d(-66.6%, 0, 0); }
 
 #community {
   padding-top: 100px;
@@ -582,6 +752,28 @@ ol {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 250px 0; }
+  #contact-content:after {
+    background: url(../images/contact-line2.png) no-repeat center center;
+    background-size: cover;
+    height: 1160px;
+    left: 3%;
+    pointer-events: none;
+    position: absolute;
+    top: 8%;
+    content: '';
+    z-index: 0;
+    width: 35px; }
+  #contact-content:before {
+    background: url(../images/line-1.png) no-repeat center center;
+    background-size: cover;
+    height: 1000px;
+    right: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    content: '';
+    z-index: 0;
+    width: 100px; }
   #contact-content .content-border-box {
     background-image: radial-gradient(circle at 100% 100%, transparent 0px, rgba(34, 197, 151, 0.59) 0px, rgba(34, 197, 151, 0.59) 2px, transparent 2px), linear-gradient(to right, rgba(34, 197, 151, 0.59), rgba(34, 197, 151, 0.59)), radial-gradient(circle at 0% 100%, transparent 0px, rgba(34, 197, 151, 0.59) 0px, rgba(34, 197, 151, 0.59) 2px, transparent 2px), linear-gradient(to bottom, rgba(34, 197, 151, 0.59), transparent), radial-gradient(circle at 0% 0%, transparent 0px, transparent 0px, transparent 2px, transparent 2px), linear-gradient(to left, transparent, transparent), radial-gradient(circle at 100% 0%, transparent 0px, transparent 0px, transparent 2px, transparent 2px), linear-gradient(to top, transparent, rgba(34, 197, 151, 0.59));
     background-size: 2px 2px, calc(100% - 4px) 2px, 2px 2px, 2px calc(100% - 4px);
